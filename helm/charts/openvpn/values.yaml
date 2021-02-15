@@ -43,7 +43,7 @@ duo:
 
 persistence:
   enabled: true
-  storageClass: default
+  storageClass: standard
   accessMode: ReadWriteMany
   size: 1Gi
 
