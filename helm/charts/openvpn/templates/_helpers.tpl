@@ -12,7 +12,7 @@ We truncate at 24 chars because some Kubernetes name fields are limited to this 
 */}}
 {{- define "fullname" -}}
 {{- $name := default .Chart.Name .Values.nameOverride -}}
-{{- printf "%s-%s" .Release.Name $name | trunc 24 | trimSuffix "-" -}}
+{{- printf "%s" .Release.Name $name | trunc 24 | trimSuffix "-" -}}
 {{- end -}}
 
 {{/*
@@ -137,7 +137,7 @@ Define let's encrypt certificate authorized center.
 */}}
 {{- define "letsencrypt_ca" -}}
 {{- if .Values.ui.ssl.prod -}}
-https://acme-v01.api.letsencrypt.org/directory
+https://acme-v02.api.letsencrypt.org/directory
 {{- else -}}
 https://acme-staging.api.letsencrypt.org/directory
 {{- end -}}

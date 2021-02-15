@@ -32,9 +32,9 @@ ui:
     enabled: *SSL_ENABLED
     secret: openvpn-letsencrypt-secret
     prod: *SSL_PROD
-    email: *SSL_EMAIL
+    email: dev@grapevine.ai
   htmlConfigmap: default
-  branding: "CloudPosse OpenVPN"
+  branding: "Grapevine AI OpenVPN"
 
 duo:
   iKey: *DUO_IKEY
@@ -50,11 +50,11 @@ persistence:
 easyrsa:
   vars:
     EASYRSA_REQ_COUNTRY: "US"
-    EASYRSA_REQ_PROVINCE: "California"
-    EASYRSA_REQ_CITY: "San Francisco"
-    EASYRSA_REQ_ORG: "Copyleft Certificate Co"
-    EASYRSA_REQ_EMAIL: "me@example.net"
-    EASYRSA_REQ_OU: "My Organizational Unit"
+    EASYRSA_REQ_PROVINCE: "New York"
+    EASYRSA_REQ_CITY: "New York"
+    EASYRSA_REQ_ORG: "Grapevine AI"
+    EASYRSA_REQ_EMAIL: "ncohen@grapevine.ai"
+    EASYRSA_REQ_OU: "Dev Ops"
     EASYRSA_CA_EXPIRE: "3650"
     EASYRSA_CERT_EXPIRE: "30"
     EASYRSA_CRL_DAYS: "180"
