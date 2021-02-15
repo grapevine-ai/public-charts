@@ -6,6 +6,9 @@ metadata:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
 spec:
   replicas: {{ .Values.openvpn.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ template "fullname" . }}
   template:
     metadata:
       labels:

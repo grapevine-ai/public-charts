@@ -7,6 +7,9 @@ metadata:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
 spec:
   replicas: {{ .Values.letsencrypt.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ template "fullname_letsencrypt" . }}
   template:
     metadata:
       labels:
