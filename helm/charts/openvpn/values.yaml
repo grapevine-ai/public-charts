@@ -44,7 +44,7 @@ duo:
 persistence:
   enabled: true
   storageClass: standard
-  accessMode: ReadWriteMany
+  accessMode: ReadWriteOnce
   size: 1Gi
 
 easyrsa:
