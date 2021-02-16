@@ -139,7 +139,7 @@ Define let's encrypt certificate authorized center.
 {{- if .Values.ui.ssl.prod -}}
 https://acme-v02.api.letsencrypt.org/directory
 {{- else -}}
-https://acme-staging.api.letsencrypt.org/directory
+https://acme-staging-v02.api.letsencrypt.org/directory
 {{- end -}}
 {{- end -}}
 
