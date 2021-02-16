@@ -13,6 +13,6 @@ roleRef:
   kind: Role
   name: {{ template "fullname_letsencrypt" . }}-role
 subjects:
-  - kind: ServiceAccount
-    name: {{ template "fullname_letsencrypt" . }}-sa
+- kind: ServiceAccount
+  name: {{ template "fullname_letsencrypt" . }}-sa
 {{- end -}}
