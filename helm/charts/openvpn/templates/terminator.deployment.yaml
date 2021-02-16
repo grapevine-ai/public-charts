@@ -9,7 +9,7 @@ spec:
   replicas: {{ .Values.ssl_terminator.replicaCount }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: { { template "fullname_terminator" . } }
+      app.kubernetes.io/name: {{ template "fullname_terminator" . }}
   template:
     metadata:
       labels:
