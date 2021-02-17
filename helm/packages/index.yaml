@@ -2,12 +2,12 @@ apiVersion: v1
 entries:
   openvpn:
   - apiVersion: v2
-    appVersion: 0.0.9
-    created: "2021-02-17T10:30:37.723771+01:00"
+    appVersion: 0.0.10
+    created: "2021-02-17T12:05:47.344217+01:00"
     description: A Helm chart for OpenVPN
-    digest: c67f6d161fa0d638f68905de895d05e5820453a046f7395c99e0924ed250efa8
+    digest: e67a4d71d17e8ea81b8a186a52825a83ee8b01ca366b3d3fd4a3a05fb4976841
     name: openvpn
     urls:
     - openvpn-0.1.2.tgz
     version: 0.1.2
-generated: "2021-02-17T10:30:37.722348+01:00"
+generated: "2021-02-17T12:05:47.340844+01:00"
