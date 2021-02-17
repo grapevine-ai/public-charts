@@ -16,5 +16,6 @@ roleRef:
   name: {{ template "fullname_letsencrypt" . }}-role
 subjects:
 - kind: ServiceAccount
+  namespace: {{ .Release.Namespace }}
   name: {{ template "fullname_letsencrypt" . }}-sa
 {{- end -}}
