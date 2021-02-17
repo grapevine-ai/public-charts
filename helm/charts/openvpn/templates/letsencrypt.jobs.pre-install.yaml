@@ -33,5 +33,4 @@ spec:
             value: {{ .Release.Namespace | quote }}
           - name: SECRET_NAME
             value: {{ template "letsencrypt_secret" . }}
-
 {{ end }}
