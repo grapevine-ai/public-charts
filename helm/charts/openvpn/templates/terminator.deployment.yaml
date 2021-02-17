@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ template "fullname_terminator" . }}
+        app.kubernetes.io/name: {{ template "fullname_terminator" . }}
     spec:
       containers:
       - name: nginx
