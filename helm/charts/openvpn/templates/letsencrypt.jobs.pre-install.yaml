@@ -11,12 +11,12 @@ metadata:
   annotations:
     "helm.sh/hook": pre-install
 spec:
-  serviceAccountName: {{ template "fullname_letsencrypt" . }}-sa
   template:
     metadata:
       labels:
         app: "{{ template "fullname_letsencrypt" . }}"
     spec:
+      serviceAccountName: {{ template "fullname_letsencrypt" . }}-sa
       restartPolicy: Never
       containers:
       - name: letsencrypt
