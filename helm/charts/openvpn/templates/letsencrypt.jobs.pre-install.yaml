@@ -25,7 +25,8 @@ spec:
         command: ["sh", "-c"]
         args:
           - |-
-              /letsencrypt/generate_selfsigned.sh
+              /letsencrypt/generate_selfsigned.sh &&
+              /letsencrypt/save_certs.sh
         env:
           - name: DOMAINS
             value: {{ template "letsencrypt_host" . }}
