@@ -121,7 +121,7 @@ ssl_terminator:
 letsencrypt:
   replicaCount: 1
   image:
-    repository: cloudposse/letsencrypt
+    repository: grapevineai/letsencrypt
     tag: latest
     pullPolicy: Always
   service:

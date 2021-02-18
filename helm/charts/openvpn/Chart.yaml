@@ -2,4 +2,4 @@ apiVersion: v2
 description: A Helm chart for OpenVPN
 name: openvpn
 version: 0.1.2
-appVersion: 0.0.15
+appVersion: 0.0.16

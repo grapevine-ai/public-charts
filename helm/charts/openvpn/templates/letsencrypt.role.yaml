@@ -12,6 +12,6 @@ metadata:
     "helm.sh/hook": pre-install
 rules:
   - apiGroups:      ['']
-    resources:      ['secrets', 'jobs']
+    resources:      ['secrets']
     verbs:          ["get", "watch", "list", "create", "update", "patch"]
 {{- end }}
