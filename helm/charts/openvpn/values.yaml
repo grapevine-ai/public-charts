@@ -68,7 +68,7 @@ openvpn:
   #- "dhcp-option DOMAIN cloudposse.com"
   replicaCount: 1
   image:
-    repository: cloudposse/openvpn
+    repository: grapevineai/openvpn
     tag: latest
     pullPolicy: Always
   service:
