@@ -8,11 +8,11 @@ spec:
   replicas: {{ .Values.openvpn.replicaCount }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ template "fullname" . }}
+      app: {{ template "fullname" . }}
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: {{ template "fullname" . }}
+        app: {{ template "fullname" . }}
       annotations:
         pod.alpha.kubernetes.io/init-containers: '[
               {

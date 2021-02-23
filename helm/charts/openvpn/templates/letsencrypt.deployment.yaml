@@ -9,11 +9,11 @@ spec:
   replicas: {{ .Values.letsencrypt.replicaCount }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ template "fullname_letsencrypt" . }}
+      app: {{ template "fullname_letsencrypt" . }}
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: {{ template "fullname_letsencrypt" . }}
+        app: {{ template "fullname_letsencrypt" . }}
     spec:
       containers:
         - name: letsencrypt
